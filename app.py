@@ -13,7 +13,7 @@ from preprocess.openpose.run_openpose import OpenPose
 import gradio as gr
 
 # Download checkpoints
-snapshot_download(repo_id="franciszzj/Leffa", local_dir="./ckpts")
+snapshot_download(repo_id="franciszzj/Leffa", local_dir="./ckpts", ignore_patterns=["*virtual_tryon.pth", "*pose_transfer.pth", "*parsing_atr.onnx", "stable-diffusion-xl-*"])
 
 class LeffaPredictor(object):
     def __init__(self):
