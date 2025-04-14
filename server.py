@@ -121,7 +121,7 @@ if __name__ == "__main__":
     )
 
     # 出力フォルダを定義
-    output_dir = "./ckpts/examples/person2"
+    output_dir = "/opt/artifact"
     os.makedirs(output_dir, exist_ok=True)
 
     # ファイル名（例: 日時やパラメータに応じて動的にすることも可能）
